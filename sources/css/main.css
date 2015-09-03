@@ -1,0 +1,46 @@
+/* common WordPress css */
+
+.alignleft {
+  float: left;
+}
+/* page header */
+
+.logo {
+  margin: 0 15px 0 0;
+}
+/* comments */
+
+.comments {
+  margin: 2em 0;
+}
+
+.commentlist,
+.children {
+  list-style: none;
+}
+
+.commentlist {
+  padding: 0;
+}
+
+.children {
+  padding: 0 0 0 70px;
+}
+
+.comment-meta {
+  margin: 10px 0;
+}
+
+.avatar {
+  margin: 0 10px 0 0;
+}
+
+.fn {
+  margin: 0 0 5px 0;
+}
+/* widgets */
+
+.widget_calendar th,
+.widget_calendar td {
+  min-width: 30px;
+}
