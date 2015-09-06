@@ -6,10 +6,10 @@
       <article <?php post_class('post'); ?> id="post-<?php the_ID(); ?>">
         <header>
           <h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-          <span>Posted on <time datetime="2015-06-17 10:25"><?php the_date();?> at <?php the_time();?></time> by <?php the_author();?></span>
+          <span>Posted on <time datetime="<?php the_date();?>"><?php the_date();?> at <?php the_time();?></time> by <?php the_author();?></span>
         </header>
         <figure>
-          <img class="thumbnail" src="http://placehold.it/650x250">
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'full-thumbnail', array( 'class' => 'thumbnail' ) ); ?></a>
         </figure>
         <?php the_content(); ?>
 
