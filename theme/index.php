@@ -11,7 +11,7 @@
           <img class="thumbnail" src="http://placehold.it/650x250">
         </figure>
         <?php the_content(); ?>
-      </article>
+      </article> 
       <?php endwhile; ?>
 
       <nav>
