@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <html>
   <head>
-    <meta charset="UTF-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-    <title>Simple Blog Home</title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'> -->
     <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css'>
     <link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/main.css'>
-  
+  <?php wp_head(); ?>
   </head>
 
-  <body>
+  <body <?php body_class(); ?>>
 
   <div class="container">
   <header class="row">
